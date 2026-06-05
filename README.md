@@ -1,6 +1,6 @@
 # Leetcode-Solutions
 
-This repository contains my LeetCode solutions implemented in Java.
+This repository contains my LeetCode solutions implemented in Python.
 
 ## About
 
@@ -21,7 +21,7 @@ I use this repository to practice Data Structures and Algorithms (DSA), improve 
 
 ## Language
 
-Java
+Python
 
 ## Goal
 
