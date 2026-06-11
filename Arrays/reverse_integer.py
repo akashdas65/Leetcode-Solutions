@@ -1,3 +1,10 @@
+# LeetCode 7 - Reverse Integer
+# Optimal Solution
+# Uses arithmetic operations instead of string conversion
+# Checks for 32-bit integer overflow
+# Time Complexity: O(log n)
+# Space Complexity: O(1)
+
 class Solution:
     def reverse(self, x: int) -> int:
         sign = -1 if x < 0 else 1
