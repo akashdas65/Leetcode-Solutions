@@ -1,7 +1,1 @@
-# LeetCode 30 - Substring with Concatenation of All Words
-
-# Approach:
-# Use a hash map to store the frequency of each word.
-# For every possible starting index, check words of fixed length.
-# Count the words seen in the current window.
-# If all words match the required frequency, add the index to the answer.
+# 
