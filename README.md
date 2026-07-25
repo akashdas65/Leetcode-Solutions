@@ -42,4 +42,4 @@ DynamicProgramming/
 
 ## Progress
 
-Problems Solved: 16
+Problems Solved: 24
