@@ -9,6 +9,9 @@
 # - If it is different from the element two positions before `k`,
 #   place it at index `k` and increment `k`.
 # - Otherwise, skip it because it would appear more than twice.
+#
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -23,7 +26,3 @@ class Solution:
                 k += 1
 
         return k
-#
-# Time Complexity: O(n)
-# Space Complexity: O(1)
-
