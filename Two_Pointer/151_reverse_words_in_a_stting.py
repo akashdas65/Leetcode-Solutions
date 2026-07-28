@@ -1,76 +1,47 @@
-# 151. Reverse Words in a String
+# LeetCode 344 - Reverse String
 
-# **Difficulty:** Medium
+# Problem Statement:
+# Write a function that reverses a string.
+# The input string is given as an array of characters s.
+# You must modify the input array in-place with O(1) extra memory.
 
-## Problem Statement
+# Example:
+# Input: s = ["h","e","l","l","o"]
+# Output: ["o","l","l","e","h"]
 
-# Given a string `s`, reverse the order of the words.
 
-A **word** is a sequence of non-space characters. The words in `s` may contain leading, trailing, or multiple spaces between them.
+# Solution 1: Two Pointer Approach
 
-Return a string with the words in reverse order, separated by a **single space**.
+# Approach:
+# Use two pointers.
+# One pointer starts from the beginning and the other from the end.
+# Swap the characters at both pointers.
+# Move the left pointer forward and the right pointer backward.
+# Continue until the pointers meet.
 
----
-
-## Example
-
-**Input:**
-```text
-s = "the sky is blue"
-```
-
-**Output:**
-```text
-"blue is sky the"
-```
-
----
-
-# Solution 1: Using Two Pointers
-
-## Approach (Step by Step)
-
-1. Split the string into individual words using `split()`.
-2. Reverse the list using the two-pointer technique.
-3. Join the reversed words using `" ".join()`.
-
-### Python Solution
-
-```python
 class Solution:
-    def reverseWords(self, s: str) -> str:
-        words = s.split()
-
-        left, right = 0, len(words) - 1
+    def reverseString(self, s: List[str]) -> None:
+        left = 0
+        right = len(s) - 1
 
         while left < right:
-            words[left], words[right] = words[right], words[left]
+            s[left], s[right] = s[right], s[left]
             left += 1
             right -= 1
 
-        return " ".join(words)
-```
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(n)`
 
----
+# Solution 2: Using Built-in Reverse Method
 
-# Solution 2: Pythonic Approach
+# Approach:
+# Python provides a built-in reverse() method for lists.
+# It reverses the list in-place without creating a new list.
 
-## Approach (Step by Step)
-
-1. Split the string into words using `split()`.
-2. Reverse the list using slicing (`[::-1]`).
-3. Join the reversed words using `" ".join()`.
-
-### Python Solution
-
-```python
 class Solution:
-    def reverseWords(self, s: str) -> str:
-        return " ".join(s.split()[::-1])
-```
+    def reverseString(self, s: List[str]) -> None:
+        s.reverse()
 
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(n)`
+# Time Complexity: O(n)
+# Space Complexity: O(1)
