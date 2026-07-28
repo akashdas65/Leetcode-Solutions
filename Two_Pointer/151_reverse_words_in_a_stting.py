@@ -1,10 +1,10 @@
 # 151. Reverse Words in a String
 
-**Difficulty:** Medium
+# **Difficulty:** Medium
 
 ## Problem Statement
 
-Given a string `s`, reverse the order of the words.
+# Given a string `s`, reverse the order of the words.
 
 A **word** is a sequence of non-space characters. The words in `s` may contain leading, trailing, or multiple spaces between them.
 
