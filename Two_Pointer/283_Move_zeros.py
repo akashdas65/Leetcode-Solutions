@@ -18,7 +18,7 @@ class Solution:
 
                 nums[left], nums[right] = nums[right], nums[left]
 
-                k += 1
+                left += 1
 
 # Time Complexity: O(n)
 # Space Complexity: O(1)
